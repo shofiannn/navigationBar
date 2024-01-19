@@ -1,0 +1,60 @@
+*, html, body {
+    margin: 0; /*memberikan jarak 0 ke websitenya*/
+    padding: 0; /*memberikan jarak 0 ke websitenya*/
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container {
+    width: 100%; /*100% maksudnya lebarnya memnuhi lebar dari elemennya*/
+    height: 100vh; /*100vh maksudnya tingginya memenuhi halaman website*/
+    display: flex; /*menghilangkan batasan di dalam*/
+    background-color: lightslategrey;
+}
+
+.wrapper {
+    display: flex; /*di dalam wrapper ada 2 div yaitu div dengan class brand dan dengan navigation. Karena di flex kan 2 div itu akan membuat 2 div tersebut bersatu dan seperti ada 2 kolom seperti yang dilihat*/
+    justify-content: space-between; /*space-between akan seolah - olah membuat ruang kosong di antarelemen. Seperti di wrapper ada 2 div dan 2 div tersebut terpisah ke arah yang berbeda*/
+    align-items: center; /*memberi jarak yang rata di atas dan bawah*/
+    padding: 15px;
+    width: 100%; /*100% maksudnya lebarnya memenuhi elemennya*/
+    height: 70px; 
+    background-color:rgba(0, 0, 0, 0.2);
+}
+
+.brand {
+    display: flex; /*menghilangkan batasan di dalam*/
+    flex-direction: row; /*membuat tampilannya seperti baris*/
+    padding: 15px; /*memberi jarak 15px ke segala arah dari tulisan dengan elemennya sendiri*/
+}
+
+.firstName {
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.lastName {
+    color: crimson;
+    font-size: 20px;
+    font-weight: 600;
+    padding-left: 5px; /*memberi jarak 5px ke kiri dari tulisan dengan elemennya sendiri*/
+}
+
+.navigation {
+    display: flex; /*menghilangkan batasan antar elemen*/
+    flex-direction: row; /*membuat tampilan menjadi baris*/
+    list-style-type: none; /*menghilangkan titik*/
+    font-size: 18px;
+}
+
+ul > li > a {
+    text-decoration: none; /*menghilangkan garis link yang ada di bawah*/
+    padding: 80px; /*memberi jarak 15px ke segala arah dari tulisan ke elemennya sendiri*/
+    font-weight: 700;
+    color: white;
+}
+
+ul > li > a:hover {
+    color: crimson;
+    transition: all .6s;
+}
